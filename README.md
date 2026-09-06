@@ -30,8 +30,6 @@ The primary objective was to observe performance degradation, latency patterns, 
 | **Test 4** | 750 | Stress Test (Heavy Load & Degradation) |
 | **Test 5** | 1000 | Peak Stress Test (Maximum Concurrency) |
 
-![Test Plan Structure](screenshots/01-test-plan.png)
-
 ---
 
 ## Test Results & Summary
@@ -44,10 +42,10 @@ The primary objective was to observe performance degradation, latency patterns, 
 | **750** | 4,500 | 3,644 | 233 | 191,176 | 63 | 1.40% | 22.5 |
 | **1000** | 6,000 | 4,548 | 232 | 79,661 | 198 | 3.30% | 68.1 |
 
+Summary report for 1000 threads
 ![Dashboard Summary](screenshots/02-dashboard-summary.png)
 
-Summary report for 1000 threads
-
+Error Breakdown Under Stress
 ![Error Breakdown](screenshots/04-error-breakdown.png)
 
 ---
@@ -92,8 +90,7 @@ git clone https://github.com/naham6/reqres-load-stress-testing.git
 cd reqres-load-stress-testing
 ```
 2. Execute a Test via CLI
-Run JMeter in non-GUI mode using the parameterized thread property:
-
+Run JMeter in non-GUI mode using the parameterized thread property (Optional if you want to see the report only):
 ```
 jmeter -n -t test-plans/reqrestest.jmx -l results.jtl
 ```
