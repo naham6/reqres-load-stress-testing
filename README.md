@@ -84,7 +84,7 @@ cd reqres-load-stress-testing
 2. Execute a Test via CLI
 Run JMeter in non-GUI mode using the parameterized thread property (Optional if you want to see the report only):
 ```
-jmeter -n -t test-plans/reqrestest.jmx -l results.jtl
+jmeter -n -t test-plans/reqrestest.jmx -l results500.jtl
 ```
 3. Generate HTML Dashboard Reports Locally
 To generate a complete HTML report dashboard from any result file:
