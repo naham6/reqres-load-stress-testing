@@ -4,14 +4,6 @@ Performance and load testing analysis of the **ReqRes** web application using Ap
 
 ---
 
-## Tools & Technologies
-* **Testing Tool:** Apache JMeter 5.6.3 
-* **Target Application:** ReqRes API (`https://reqres.in/`)
-* **Environment:** Windows / PowerShell
-* **Data Formats:** JMX (Test Plan), JTL (Raw Results)
-
----
-
 ## Test Objectives & Scenarios
 The primary objective was to observe performance degradation, latency patterns, and failure thresholds as concurrent virtual users increased. The test script executes a multi-endpoint workflow via HTTP GET requests:
 * `GET /`
@@ -97,5 +89,5 @@ jmeter -n -t test-plans/reqrestest.jmx -l results.jtl
 3. Generate HTML Dashboard Reports Locally
 To generate a complete HTML report dashboard from any result file:
 ```
-jmeter -g results.jtl -o report
+jmeter -g results/results_500.jtl -o report
 ```
